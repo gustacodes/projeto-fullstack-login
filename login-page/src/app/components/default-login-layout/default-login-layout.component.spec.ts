@@ -8,12 +8,10 @@ describe('DefaultLoginLayoutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DefaultLoginLayoutComponent ]
+      imports: [DefaultLoginLayoutComponent]
     })
     .compileComponents();
-  });
-
-  beforeEach(() => {
+    
     fixture = TestBed.createComponent(DefaultLoginLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
